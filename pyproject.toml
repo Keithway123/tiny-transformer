@@ -1,0 +1,19 @@
+[project]
+name = "tiny-transformer"
+version = "0.1.0"
+description = "A step-by-step PyTorch implementation for learning the Transformer architecture"
+readme = "README.md"
+authors = [
+    { name = "Keithway123", email = "keithsway802@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "torch>=2.14.0",
+]
+
+[project.scripts]
+tiny-transformer = "tiny_transformer:main"
+
+[build-system]
+requires = ["uv_build>=0.12.6,<0.13.0"]
+build-backend = "uv_build"
